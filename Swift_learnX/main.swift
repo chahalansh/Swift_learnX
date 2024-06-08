@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Printing Hello World
+
 print("Hello, World")
 
 //VARIABLES AND DATA TYPES:
@@ -49,4 +51,42 @@ print(d)
 print(f)
 print(b)
 
+// CONDITIONAL STATEMENTS IF ELSE
+// Other conditionals same as C programming languages; if, else if, else, nested if else...
+
+var m = 15
+if m == 15
+{
+    print("Ansh Chahal learning Swift Basics.")
+}
+else{
+    print("False")
+}
+
+// LOOPS; FOR, WHILE, REPEAT WHILE:
+// For loop
+for i in 1...3
+{
+    print("Swift")
+    print("printing value of i", i)
+    // other way of concatenation is:
+    print("printing value of i is \(i)")
+}
+
+
+// While Loop
+var o = 1
+var p = 10
+while o <= p
+{
+    print (o)
+    o += 1;
+}
+
+// Repeat while  =  do while
+repeat
+{
+    print (o)
+    o += 1;
+} while (o <= p)
 
