@@ -140,5 +140,28 @@ print(line)
 }
 
 // SWITCH Case
+var v = 2
+switch(v)
+{
+    case 1:
+    print("True Case 1")
+fallthrough // we can use break also if we want to print single statement to print
+    case 2:
+    print("True Case 2")
+fallthrough
+    case 3:
+    print("True Case 3")
+fallthrough
+    case 4:
+    print("True Case 4")
+fallthrough
+    case 5:
+    print("True Case 5")
+fallthrough
+default:
+    print("True case for default")
+}
+
+
 
 
