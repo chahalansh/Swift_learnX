@@ -162,6 +162,28 @@ default:
     print("True case for default")
 }
 
+var y = 2
+switch(v)
+{
+    case 1:
+    print("True Case 1")
+break
+    case 2:
+    print("True Case 2")
+break
+    case 3:
+    print("True Case 3")
+break
+    case 4:
+    print("True Case 4")
+break
+    case 5:
+    print("True Case 5")
+break
+default:
+    print("True case for default")
+}
+
 
 
 
