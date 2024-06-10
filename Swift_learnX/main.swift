@@ -138,3 +138,7 @@ for j in 0..<arr2d1[i].count
     }
 print(line)
 }
+
+// SWITCH Case
+
+
