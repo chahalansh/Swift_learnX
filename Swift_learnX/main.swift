@@ -90,3 +90,51 @@ repeat
     o += 1;
 } while (o <= p)
 
+// ARRAY 1D, 2D;
+var intArr = [1,2,3,4,5]
+var intArr1: [Int] = [1,2]
+
+print(intArr[1])
+print(intArr1[1])
+
+for i in 0...4
+{
+    print(intArr[i])
+}
+
+// we can also add the upper limit of array using the count of array;
+for i in 0..<intArr.count
+{
+    print(intArr[i])
+}
+
+//2D Array
+
+var arr2d: [[Int]] = [[1,2,3],[4,5,6],[7,8,9]]
+print(arr2d)
+print(arr2d[0][0])
+
+//if we have to print each value of 2d array as an iteration
+for i in 0...2
+{
+    for j in 0...2
+    {
+        print(arr2d[i][j])
+    }
+}
+
+// How to print a matrix from an 2D array
+ 
+var arr2d1: [[Int]] = [[1,2,3],[4,5,6],[7,8,9]]
+ 
+for i in 0..<arr2d1.count
+{
+    var line = ""
+for j in 0..<arr2d1[i].count
+    {
+        line += String(arr2d1[i][j])
+        line += " "
+        //print(arr2d1[i][j])
+    }
+print(line)
+}
