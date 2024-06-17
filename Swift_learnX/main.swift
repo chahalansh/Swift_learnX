@@ -186,6 +186,19 @@ default:
 
 //Dictionary
 //key and values
+// format is --> let dictname:[key datatype:value data type] = ["key1":value1, "key2":value2, ...]
+let valueDict:[String:Int] = ["A":1, "B":2, "C":34]
+let valueDict1 = ["A":1, "B":2, "C":34] //actually the default data type for key is string and for values is integer
+print(valueDict)
+print(valueDict1)
+let emptyDict:[String:Int] = [:]
+print(emptyDict)
 
+print(valueDict["A"])
 
-
+for (i,j) in valueDict
+{
+    print("\(i) \(j)")
+}
+print(valueDict.isEmpty)
+print(valueDict.count )
