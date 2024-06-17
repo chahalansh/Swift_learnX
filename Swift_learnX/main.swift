@@ -202,3 +202,34 @@ for (i,j) in valueDict
 }
 print(valueDict.isEmpty)
 print(valueDict.count )
+
+//SET in Swift
+// Basic format --> let setname: set datatype = [1,4,6,3]
+var set1: Set = [1,2,2,3,3,3,55,55,8,8]
+let arr1: [Int] = [1,2,2,3,3,3,55,55,8,8]
+print(set1)
+print(arr1)
+ 
+for i in set1
+{
+    print(i)
+}
+// to insert any value in the set we use .insert(value)
+set1.insert(10)
+print(set1)
+
+// to remove any value we use .remove
+set1.remove(8)
+print(set1)
+
+// for ascending we use sorted
+print(set1.sorted())
+// for decending we use reversed
+print(set1.reversed())
+// for count we use .count
+print(set1.count)
+// to find union, intersection, symmetricDifference make another set say set2 and then you can easily find all of these using .union,...
+
+
+
+ 
