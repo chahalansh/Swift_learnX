@@ -306,3 +306,27 @@ func factorial(num : Int) -> Int
     }
 }
 print(factorial(num: 3))
+
+// CLOSURE IN SWIFT
+
+let anshClosure =
+{
+    print("Ansh working with closures")
+}
+anshClosure()
+
+let anshClosure1:(String) -> () =
+{
+    app in print("Ansh working with closures \(app)")
+}
+anshClosure1("Swift IOS") // this string value is saved in a variable in this case, "in" in "app in print" is a separator and "app" is a variable. this value(Swift IOS) is saved in "app"
+
+let table:(Int, Int) -> (Int) =
+{
+    (val1, val2) in for val2 in 1...val2
+    {
+        print("\(val1) * \(val2) = \(val1 * val2)")
+    }
+    return 0
+}
+table(10,10)
