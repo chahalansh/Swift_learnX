@@ -330,3 +330,58 @@ let table:(Int, Int) -> (Int) =
     return 0
 }
 table(10,10)
+
+// OOPS in Swift
+//How to make a class
+class Temperature //using class keyword we create class then class name
+{
+    var temp: Double    // a variable temp with datatype as double
+    
+    init()              // now creating a constructor body, in other languages this process is different but in SWIFT we use "init" keyword to make a constructor followed by () to declare datatype and then curly brackets for body.
+    {
+        temp = 32.0
+    }
+}
+var t = Temperature()
+print("the median temperature is: \(t.temp)")
+
+class Employee
+{
+    var salary: Int
+    init(salary: Int)
+    {
+        self.salary = salary
+    }
+    func salaryEmp()
+    {
+        print("The salary of the Employee is: \(salary)")
+    }
+}
+var E = Employee(salary: 100000)
+E.salaryEmp()
+
+class Calculate
+{
+    let a : Int
+    let b : Int
+    let c : Int
+    
+    init (a : Int, b : Int)
+    {
+        self.a = a
+        self.b = b
+        c = a + b
+    }
+    func total(cc : Int) -> Int
+    {
+        return c - cc
+    }
+    func result()
+    {
+        print("Result: \(total(cc: 5))")
+        print("Result: \(total(cc: 6))")
+    }
+}
+var C = Calculate(a : 50, b : 60)
+C.result()
+print(C.total(cc: 20))
