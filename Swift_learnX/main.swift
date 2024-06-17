@@ -273,3 +273,36 @@ func function1(message:String)
     function2()
 }
 function1(message: "Ansh")
+
+// RECURSION
+func recurv(num : Int)
+{
+    print(num)
+    if(num < 10)
+    {
+        recurv(num: num + 1)
+    }
+}
+recurv(num: 1)
+
+func recurv1(num : Int)
+{
+    print(num)
+    if(num > 1)
+    {
+        recurv1(num: num - 1)
+    }
+}
+recurv1(num: 10)
+
+func factorial(num : Int) -> Int
+{
+    if num == 1
+    {
+        return 1
+    }
+    else {
+        return num * factorial(num: num - 1)
+    }
+}
+print(factorial(num: 3))
