@@ -228,8 +228,48 @@ print(set1.sorted())
 print(set1.reversed())
 // for count we use .count
 print(set1.count)
-// to find union, intersection, symmetricDifference make another set say set2 and then you can easily find all of these using .union,...
+// to find union, intersection, symmetricDifference make another set, say set2, and then you can easily find all of these using .union,...
 
+// FUNCTIONS
 
+ func ansh()
+{
+    print("Ansh")
+}
+ansh()
+//function with no return type
+func ansh1() -> ()
+{
+   print("Ansh1")
+}
+ansh1()
+//another way to represent a no return type function
+func ansh2() -> Void
+{
+   print("Ansh2")
+}
+ansh2()
 
- 
+func anshpara(any:String, num:Int)
+{
+    print("the name is \(any) and the value is \(num)")
+}
+anshpara(any:"Ansh", num:20)
+
+// making a function that returns some value
+func fname1() -> Int
+{
+    return 10
+}
+print(fname1())
+
+// Nested Function
+func function1(message:String)
+{
+    func function2()
+    {
+        print("Hi, funciton1: \(message)")
+    }
+    function2()
+}
+function1(message: "Ansh")
